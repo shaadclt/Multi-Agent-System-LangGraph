@@ -32,25 +32,25 @@ The chatbot is designed to operate inside **Google Colab**, using `userdata` for
 ```
 
 ## 🔧 Setup Instructions
-**1. Clone the Repository**
+### 1. Clone the Repository
 
-    ```bash
-    git clone https://github.com/shaadclt/Multi-Agent-System-LangGraph.git
-    cd Multi-Agent-System-LangGraph
-    ```
-**2. Open `multi_agent_system_langgraph.ipynb` in Google Colab**
+```bash
+git clone https://github.com/shaadclt/Multi-Agent-System-LangGraph.git
+cd Multi-Agent-System-LangGraph
+```
+### 2. Open `multi_agent_system_langgraph.ipynb` in Google Colab
 
-**3. Add Azure Credentials to Colab userdata**
+### 3. Add Azure Credentials to Colab userdata
 
-    ```python
-    import os
-    from google.colab import userdata
-    
-    os.environ["AZURE_OPENAI_API_KEY"] = userdata.get('AZURE_OPENAI_API_KEY')
-    os.environ["AZURE_OPENAI_ENDPOINT"] = userdata.get('AZURE_OPENAI_ENDPOINT')
-    ```
+```python
+import os
+from google.colab import userdata
 
-4. Run the Notebook Cells
+os.environ["AZURE_OPENAI_API_KEY"] = userdata.get('AZURE_OPENAI_API_KEY')
+os.environ["AZURE_OPENAI_ENDPOINT"] = userdata.get('AZURE_OPENAI_ENDPOINT')
+```
+
+### 4. Run the Notebook Cells
 
 ## 🧠 Conversation Flow Example
 ```text
