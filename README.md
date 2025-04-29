@@ -27,28 +27,28 @@ The chatbot is designed to operate inside **Google Colab**, using `userdata` for
 ```text
 ├── product_qna_agentic_chatbot.ipynb       # Defines Product QnA agent
 ├── orders_chatbot_custom_agent_langgraph.ipynb  # Defines Order management agent
-├── main_chatbot.ipynb                      # Main router agent and orchestrator
+├── multi_agent_system_langgraph.ipynb           # Main router agent and orchestrator
 ├── README.md                               # You are here
 ```
 
 ## 🔧 Setup Instructions
 1. Clone the Repository
 
-```bash
-git clone https://github.com/shaadclt/Multi-Agent-System-LangGraph.git
-cd Multi-Agent-System-LangGraph
-```
+    ```bash
+    git clone https://github.com/shaadclt/Multi-Agent-System-LangGraph.git
+    cd Multi-Agent-System-LangGraph
+    ```
 2. Open `multi_agent_system_langgraph.ipynb` in Google Colab
 
 3. Add Azure Credentials to Colab userdata
 
-```python
-import os
-from google.colab import userdata
-
-os.environ["AZURE_OPENAI_API_KEY"] = userdata.get('AZURE_OPENAI_API_KEY')
-os.environ["AZURE_OPENAI_ENDPOINT"] = userdata.get('AZURE_OPENAI_ENDPOINT')
-```
+    ```python
+    import os
+    from google.colab import userdata
+    
+    os.environ["AZURE_OPENAI_API_KEY"] = userdata.get('AZURE_OPENAI_API_KEY')
+    os.environ["AZURE_OPENAI_ENDPOINT"] = userdata.get('AZURE_OPENAI_ENDPOINT')
+    ```
 
 4. Run the Notebook Cells
 
